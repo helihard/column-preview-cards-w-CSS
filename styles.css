@@ -56,9 +56,43 @@ body {
 }
 
 button {
-  border: 0;
+  border: .15rem solid var(--verylightgray);;
   outline: 0;
   background-color: var(--verylightgray);
+  font-family: var(--body-font);
+  font-size: 1rem;
+  padding: .6rem 1.8rem;
+  border-radius: 1.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: inherit;
+}
+
+button:active {
+  cursor: pointer;
+  background-color: inherit;
+}
+
+#sedans button {
+  color: var(--brightorange);
+}
+
+#suvs button {
+  color: var(--darkcyan);
+}
+
+#luxury button {
+  color: var(--verydarkcyan);
+}
+
+#sedans button:hover, #suvs button:hover, #luxury button:hover {
+  color: var(--verylightgray);
+}
+
+#sedans button:active, #suvs button:active, #luxury button:active {
+  color: var(--verylightgray);
 }
 
 img {
