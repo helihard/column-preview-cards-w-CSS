@@ -16,6 +16,7 @@ p {
 }
 
 .attribution { 
+  font-family: var(--body-font);
   font-size: 11px; 
   text-align: center; 
 }
