@@ -1,0 +1,53 @@
+:root {
+  --brightorange: rgb(227, 136, 38);
+  --darkcyan: hsl(184, 100%, 22%);
+  --verydarkcyan: hsl(179, 100%, 13%);
+  --transparentwhite: hsla(0, 0%, 100%, 0.75)
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(242, 242, 242);
+  box-sizing: border-box;
+}
+
+#wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(242, 242, 242);
+  display: flex;
+  justify-content: center; /* note: desktop align-items */
+}
+
+#container {
+  display: flex;
+  flex-direction: column; /* note: mobile */
+}
+
+#container div {
+  padding: 2.5rem;
+}
+
+#sedans {
+  background-color: var(--brightorange);
+}
+
+#suvs {
+  background-color: var(--darkcyan);
+}
+
+#luxury {
+  background-color: var(--verydarkcyan);
+}
+
+button {
+  border: 0;
+  outline: 0;
+  background-color: rgb(242, 242, 242);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
