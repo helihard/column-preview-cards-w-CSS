@@ -1,0 +1,29 @@
+@media (max-width: 980px) {
+  #wrapper {
+    align-items: flex-start;
+  }
+    
+  #container {
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  #container div {
+    width: auto;
+    max-width: 330px;
+  }
+
+  #container div:first-child {
+    border-top-left-radius: .4rem;
+    border-top-right-radius: .4rem;
+  }
+  
+  #container div:last-child {
+    border-bottom-left-radius: .4rem;
+    border-bottom-right-radius: .4rem;
+  }
+
+  p {
+    margin-bottom: 1.7rem;
+  }
+}
