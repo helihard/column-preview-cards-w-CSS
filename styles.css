@@ -1,32 +1,46 @@
 :root {
-  --brightorange: rgb(227, 136, 38);
+  --brightorange: hsl(31, 77%, 52%);
   --darkcyan: hsl(184, 100%, 22%);
   --verydarkcyan: hsl(179, 100%, 13%);
-  --transparentwhite: hsla(0, 0%, 100%, 0.75)
+  --transparentwhite: hsla(0, 0%, 100%, 0.75);
+  --verylightgray: rgb(242, 242, 242);
+  --body-font: 'Lexend Deca', sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(242, 242, 242);
+  background-color: var(--verylightgray);
   box-sizing: border-box;
 }
 
 #wrapper {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(242, 242, 242);
+  background-color: var(--verylightgray);
   display: flex;
   justify-content: center; /* note: desktop align-items */
 }
 
 #container {
+  margin: 5rem 1.3rem 0;
+  border-radius: .4rem;
   display: flex;
   flex-direction: column; /* note: mobile */
 }
 
 #container div {
-  padding: 2.5rem;
+  padding: 2.9rem;
+}
+
+#container div:first-child {
+  border-top-left-radius: .4rem; /* note: mobile */
+  border-top-right-radius: .4rem; /* note: mobile */
+}
+
+#container div:last-child {
+  border-bottom-left-radius: .4rem; /* note: mobile */
+  border-bottom-right-radius: .4rem; /* note: mobile */
 }
 
 #sedans {
@@ -44,7 +58,7 @@ body {
 button {
   border: 0;
   outline: 0;
-  background-color: rgb(242, 242, 242);
+  background-color: var(--verylightgray);
 }
 
 img {
